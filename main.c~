@@ -71,7 +71,7 @@ int main()
         Parameter[i].start_height = i * (COLS/thread_num);
 	Parameter[i].end_height = (i+1) * (COLS/thread_num);
               
-        pthread_create( &(thread[i]), NULL, (void *)&raytracing,&(Parameter[i]) );
+        pthread_create( &(thread[i]), NULL, &raytracing,&(Parameter[i]) );
       
     } 
     for(int j = 0; j < thread_num ; j++){

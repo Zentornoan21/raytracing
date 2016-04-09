@@ -4,8 +4,7 @@ all: $(EXEC)
 
 CC ?= gcc
 CFLAGS = \
-	-std=gnu99 -Wall -Ofast -g -pthread\
-	-D__force="__attribute__((always_inline))"
+	-std=gnu99 -Wall -Ofast -g -pthread
 LDFLAGS = \
 	-lm -pthread
 

@@ -14,7 +14,7 @@ typedef struct {
 	int end_width;
 	int end_height;
 	int start_width;
-	int start_height;
+	int start_h;
 	int width;
 	int height;
 

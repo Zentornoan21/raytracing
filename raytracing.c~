@@ -479,8 +479,8 @@ void raytracing(void *parameter)
     idx_stack stk;
 
     int factor = sqrt(SAMPLES);
-    for (int j = start_h; j < end_h; j++) {
-        for (int i = start_w; i < end_w; i++) {
+    for (int j = start_height; j < end_height; j++) {
+        for (int i = start_width; i < end_width; i++) {
             double r = 0, g = 0, b = 0;
             /* MSAA */
             for (int s = 0; s < SAMPLES; s++) {
